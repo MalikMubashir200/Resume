@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Titillium_Web, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./Header";
+import Footer from "./footer";
 
 const titillium = Titillium_Web({
   variable: "--font-titillium",
@@ -29,7 +30,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${titillium.variable} ${poppins.variable} antialiased`}>
         <Header />
-        {children}
+        <main>{children}</main>
+        <Footer/>
       </body>
     </html>
   );
