@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: white; /* light gray background */
+  background-color:white ;
   color: #111827; /* dark slate text */
   font-family: var(--font-poppins); /* default to Poppins */
 }
