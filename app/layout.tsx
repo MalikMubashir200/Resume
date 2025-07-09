@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "My App",
+  title: "Healthcare Portfolio",
   description: "A modern web app",
 };
 
