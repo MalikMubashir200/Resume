@@ -30,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${titillium.variable} ${poppins.variable}`}>
-      <body className="antialiased">
+    <html lang="en">
+      <body className={`antialiased ${titillium.variable} ${poppins.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />
