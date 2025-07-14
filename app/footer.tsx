@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="space-y-5 ">
           <h3 className="text-lg font-semibold uppercase tracking-wider text-white">ABOUT ME</h3>
           <p className="text-sm leading-relaxed text-gray-400">
-            I'm a freelance web developer with a passion for building modern web applications that improve user experiences and reduce administrative burdens.
+            I&apos;m a freelance web developer with a passion for building modern web applications that improve user experiences and reduce administrative burdens.
           </p>
           <p className="font-medium text-white">Malik Mubashir</p>
         </div>

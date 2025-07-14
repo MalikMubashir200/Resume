@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaArrowRight, FaLinkedinIn, FaWhatsapp, FaGithub, FaTwitter, FaMapLocation } from 'react-icons/fa6';
+import { FaEnvelope, FaPhone, FaLinkedinIn, FaWhatsapp, FaMapLocation } from 'react-icons/fa6';
 import { SiFiverr, SiUpwork } from 'react-icons/si';
 
 const ContactSection = () => {
@@ -13,11 +13,11 @@ const ContactSection = () => {
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
           >
             <span className="block text-[#faaf52] mb-2">GET IN TOUCH</span>
-            <span className="block text-gray-800">LET'S WORK TOGETHER</span>
+            <span className="block text-gray-800">LET&apos;S WORK TOGETHER</span>
           </h2>
           <div className="h-1 w-16 bg-[#faaf52] mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-            Have a project in mind or want to discuss opportunities? I'm just a message away.
+            Have a project in mind or want to discuss opportunities? I&apos;m just a message away.
           </p>
         </div>
 

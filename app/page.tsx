@@ -5,15 +5,6 @@ import WhyWorkWithMe from './components/why-work-with-me';
 import ContactSection from './components/ContactSection';
 import WebDevelopmentServices from './components/WebDevelopmentServices';
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  caseStudyLink?: string;
-  category: string;
-}
-
 const projects = [
   {
     id: 1,

@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
 import { FaUpwork, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
 import { TbBrandFiverr } from "react-icons/tb";
 
@@ -66,15 +64,17 @@ const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* Right: Full-height image with social icons */}
-      <div className="relative w-full md:w-1/2 h-80 sm:h-96 md:h-full">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover "
-        />
+      <div className="relative w-full md:w-1/2 h-[400px] sm:h-[500px] md:h-screen">
+        <div className="relative w-full h-full">
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={800}
+            height={1000}
+            priority
+            className="w-full h-full object-cover"
+          />
+        </div>
 
         {/* Social Icons - Bottom Right */}
         <div className="absolute bottom-6 right-6 flex space-x-4 z-10">

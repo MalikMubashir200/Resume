@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { FaClinicMedical, FaUserMd, FaCalendarAlt, FaMobileAlt, FaChartLine, FaShieldAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaClinicMedical, FaCalendarAlt, FaMobileAlt, FaChartLine, FaShieldAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { FaRobot } from 'react-icons/fa6';
 
 const useCases = [

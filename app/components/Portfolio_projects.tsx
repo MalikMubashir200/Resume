@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
+import Image from 'next/image';
 
 type Project = {
   id: number;
@@ -46,11 +47,16 @@ export default function PortfolioProjects({ projects, titleP1, titleP2, subtitle
             >
               <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  loading="lazy"
+                  style={{
+                    maxWidth: '100%',
+                    height: 'auto'
+                  }}
                 />
                 <div className="absolute bottom-4 left-4 right-4 z-20 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                   <span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wide rounded-full bg-white/90 text-gray-900 backdrop-blur-sm">

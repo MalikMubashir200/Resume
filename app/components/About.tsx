@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBriefcase, FaGraduationCap, FaTools, FaCheckCircle } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap, FaTools } from 'react-icons/fa';
 
 const experience = [
   {
