@@ -1,40 +1,42 @@
 import type { Metadata } from "next";
-import { Titillium_Web, Poppins } from "next/font/google";
+import { Ubuntu, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./Header";
-import Footer from "./footer";
 
-// Font setup
-const titillium = Titillium_Web({
+// Load Ubuntu
+const ubuntu = Ubuntu({
+  variable: "--font-ubuntu",
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-titillium",
-  display: "swap",
+  weight: ["400", "500", "700"],
+  display: "swap", // Better performance
 });
 
-const poppins = Poppins({
+// Load Roboto Mono
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-poppins",
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Healthcare Portfolio",
-  description: "A modern web app",
+  title: "Developer Portfolio", // ✅ Meaningful title
+  description: "Full-stack developer specializing in healthcare applications.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className={`antialiased ${titillium.variable} ${poppins.variable}`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${ubuntu.variable} ${robotoMono.variable} antialiased bg-white text-gray-900`}>
         <Header />
-        <main>{children}</main>
-        <Footer />
+        <main role="main">{children}</main>
       </body>
     </html>
   );

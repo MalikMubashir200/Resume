@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
+/* Define font variables injected by next/font/google */
 :root {
-  --font-titillium: 'Titillium Web', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-roboto-mono: 'Roboto Mono', monospace;
 }
 
+/* Global body style */
 body {
-  background-color:white ;
-  color: #111827; /* dark slate text */
-  font-family: var(--font-poppins); /* default to Poppins */
+  background-color: white;
+  color: #111827; /* Slate-900 */
+  font-family: var(--font-ubuntu), sans-serif;
 }
 
-p,link{
-  font-family: var(--font-titillium);
+/* Paragraphs and links use Roboto Mono */
+p,
+a {
+  font-family: var(--font-roboto-mono), monospace;
+}
+
+/* h1 uses Ubuntu primarily, fallback to Arial and sans-serif */
+h1 {
+  font-family: var(--font-ubuntu), Arial, sans-serif;
 }
