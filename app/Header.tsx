@@ -56,12 +56,21 @@ const Header = () => {
     }
   };
 
+  interface industry {
+    link: string;
+    name: string;
+  }
+
+  const industries: industry[] = [
+    { link: '/healthcare', name: 'Healthcare' },
+  ];
+
   return (
     <>
-      <header role="banner" className="fixed h-16 md:h-screen w-full md:w-24 bg-white border-b md:border-r border-gray-300 shadow-sm flex md:flex-col items-center justify-between md:justify-start px-4 md:p-4">
+      <header role="banner" className="fixed top-0 left-0 z-50 h-16 md:h-screen w-full md:w-24 bg-white/95 backdrop-blur-sm border-b md:border-r border-gray-200 shadow-sm flex md:flex-col items-center justify-between md:justify-start px-4 md:p-4">
         <Link 
           href="/" 
-          className="flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded-md p-1"
+          className="flex items-center justify-center focus:outline-none focus:ring-offset-2 rounded-md p-1"
           aria-label="Home"
         >
           <img 
@@ -75,7 +84,7 @@ const Header = () => {
         
         <div className="hidden md:flex flex-1 items-center justify-center">
           <div className="origin-center -rotate-90 whitespace-nowrap">
-            <h1 className="text-[1.3rem] font-normal text-gray-700 heading">Malik Mubashir</h1>
+            <h1 className="text-[1.3rem] font-normal text-gray-700 heading">Malik "MR" Mubashir</h1>
             <p className="text-md text-gray-500 w-full text-center">Web Developer</p>
           </div>
         </div>
@@ -83,23 +92,16 @@ const Header = () => {
         <button 
           onClick={toggleMenu}
           ref={industriesButtonRef}
-          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-black hover:text-blue-600 transition-all focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded-md"
+          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-gray-700 hover:text-orange-500 transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-md"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
           aria-controls="main-menu"
+          aria-haspopup="true"
         >
           {isMenuOpen ? (
-            <>
-              <div className="md:hidden">
-                <IoClose className="w-8 h-8" />
-              </div>
-              <div className="hidden md:flex items-center gap-1">
-                <IoClose className="w-7 h-7" />
-                <span className="sr-only md:not-sr-only text-base">Close</span>
-              </div>
-            </>
+            <IoClose className="w-10 h-10 transition-transform hover:scale-110" />
           ) : (
-            <IoMenu className="w-8 h-8 hover:scale-110 transition-transform" />
+            <IoMenu className="w-10 h-10 transition-transform hover:scale-110" />
           )}
         </button>
       </header>
@@ -108,7 +110,7 @@ const Header = () => {
         <div 
           ref={menuRef}
           id="main-menu"
-          className="fixed inset-0 z-40 flex flex-col items-center justify-between p-6 bg-white/90 backdrop-blur-lg overflow-y-auto shadow-xl"
+          className="fixed inset-0 z-40 flex flex-col items-center justify-between p-6 bg-white overflow-y-auto shadow-xl"
           role="navigation"
           aria-label="Primary"
         >
@@ -117,7 +119,7 @@ const Header = () => {
               <li>
                 <Link 
                   href="/" 
-                  role="menuitem" className="text-5xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-3 px-4 focus:outline-none"
+                  role="menuitem" className="text-4xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-4 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
                   onClick={toggleMenu}
                 >
                   Home
@@ -126,7 +128,7 @@ const Header = () => {
               <li>
                 <Link 
                   href="#about" 
-                  role="menuitem" className="text-5xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-3 px-4 focus:outline-none"
+                  role="menuitem" className="text-4xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-4 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
                   onClick={toggleMenu}
                 >
                   About
@@ -137,7 +139,7 @@ const Header = () => {
                   ref={industriesButtonRef}
                   onClick={toggleIndustries}
                   onKeyDown={handleIndustriesKeyDown}
-                  className="w-full text-5xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 flex items-center justify-between py-3 px-4 focus:outline-none"
+                  className="w-full text-4xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 flex items-center justify-between py-4 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
                   aria-expanded={showIndustries}
                   aria-controls="industries-submenu" aria-haspopup="true"
                 >
@@ -153,39 +155,28 @@ const Header = () => {
                     className="mt-2 ml-6 space-y-3 border-l border-gray-200 pl-5"
                   >
                     <li>
-                      <Link 
-                        href="/industries/clinic" 
-                        role="menuitem" className="text-2xl font-normal text-gray-700 hover:text-orange-500 transition-colors duration-200 block py-2 px-3 focus:outline-none"
+                      {industries.map((item) =>{
+                        return(
+                          <Link 
+                        href={item.link} 
+                        role="menuitem" className="text-2xl flex items-center gap-3 font-normal text-gray-700 hover:text-orange-500 transition-colors duration-200 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
                         onClick={toggleMenu}
                       >
-                        Clinic & Private Practice
+                        <div className='h-3 w-3 bg-orange-500 rounded-full'></div>
+                         {item.name}
                       </Link>
+                        )
+                      })}
                     </li>
-                    <li>
-                      <Link 
-                        href="/industries/telemedicine" 
-                        role="menuitem" className="text-2xl font-normal text-gray-700 hover:text-orange-500 transition-colors duration-200 block py-2 px-3 focus:outline-none"
-                        onClick={toggleMenu}
-                      >
-                        Telemedicine Platforms
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        href="/industries/medical-booking" 
-                        role="menuitem" className="text-2xl font-normal text-gray-700 hover:text-orange-500 transition-colors duration-200 block py-2 px-3 focus:outline-none"
-                        onClick={toggleMenu}
-                      >
-                        Medical Booking Systems
-                      </Link>
-                    </li>
+                   
+                   
                   </ul>
                 )}
               </li>
               <li>
                 <Link 
                   href="#work" 
-                  role="menuitem" className="text-5xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-3 px-4 focus:outline-none"
+                  role="menuitem" className="text-4xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-4 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
                   onClick={toggleMenu}
                 >
                   Work
@@ -194,7 +185,7 @@ const Header = () => {
               <li>
                 <Link 
                   href="#contact" 
-                  role="menuitem" className="text-5xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-3 px-4 focus:outline-none"
+                  role="menuitem" className="text-4xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-4 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
                   onClick={toggleMenu}
                 >
                   Contact
@@ -202,15 +193,6 @@ const Header = () => {
               </li>
             </ul>
           </div>
-
-          <button
-            onClick={toggleMenu}
-            className="absolute top-6 right-6 flex items-center gap-2 text-3xl text-gray-700 hover:text-orange-500 transition-colors duration-200 focus:outline-none"
-            aria-label="Close menu"
-          >
-            <IoClose className="w-8 h-8" />
-            <span>Exit</span>
-          </button>
         </div>
       )}
     </>

@@ -2,8 +2,13 @@
 
 /* Font variables from next/font/google */
 :root {
-  --font-ubuntu: 'Ubuntu', Helvetica, sans-serif;
+  --font-ubuntu: 'Ubuntu', 'Helvetica', sans-serif;
   --font-roboto-mono: 'Roboto Mono', monospace;
+}
+
+/* html */
+html{
+  scroll-behavior: smooth;
 }
 
 /* Global styles */
@@ -14,8 +19,16 @@ body {
   line-height: 1.6;
 }
 
-/* Headings use Ubuntu */
-h1, h2, h3, h4, h5, h6,Link {
+/* Headings use both Open Sans and Ubuntu */
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--font-open-sans), var(--font-ubuntu), sans-serif;
+   font-weight: 600; /* Semi-bold for better readability */
+   @supports (font-variation-settings: normal) {
+     font-family: var(--font-open-sans), var(--font-ubuntu), sans-serif;
+   }
+}
+
+Link {
    font-family: var(--font-ubuntu);
 }
 
@@ -29,10 +42,11 @@ body {
 p,
 a,
 .heading,
-span {
+span,
+h2 {
   font-family: var(--font-roboto-mono);
 }
-
+  
 /* Utility: Orange fill from bottom on hover */
 .fill-from-bottom {
   position: relative;

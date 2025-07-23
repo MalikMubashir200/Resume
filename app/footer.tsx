@@ -3,8 +3,8 @@ import { FaLinkedin, FaTwitter, FaGithub, FaInstagram, FaMapMarkerAlt, FaEnvelop
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1b21] pt-16 md:pl-24 text-gray-300 py-16 px-6 md:px-12 border-t border-[#2d2e36]">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 p-5">
+    <footer className="bg-[#1a1b21] md:pl-24 text-gray-300 py-12 md:py-16 px-10 md:px-12 border-t border-[#2d2e36] mt-16">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
         
         {/* About Section */}
         <div className="space-y-5">

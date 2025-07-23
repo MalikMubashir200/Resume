@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { PrismaClient } from "@prisma/client"
+import prisma from "@/lib/prisma";
 import z from "zod";
-
-const prisma = new PrismaClient();
 
 const createProjectSchema = z.object({
   title: z.string().min(1),
@@ -10,16 +8,6 @@ const createProjectSchema = z.object({
   liveDemoUrl: z.string().min(1),
   category: z.string().min(1)
 })
-
-
-export async function GET() {
- try {
-   const projects = await prisma.project.findMany();
-   return NextResponse.json(projects);
- } catch (err) {
-  return NextResponse.json({ error: "Server error" }, { status: 500 });
-  }
-};
 
 export async function POST(req:NextRequest) {
   try {
