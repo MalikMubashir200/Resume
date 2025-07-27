@@ -77,10 +77,10 @@ const Footer = () => {
             <a href="#" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
               <TbBrandFiverr className="w-5 h-5 text-gray-400 transition-colors duration-200 group-hover:text-white" />
             </a>
-            <a href="#" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
+            <a href="https://wa.me/923485467832" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
               <FaWhatsapp className="w-5 h-5 text-gray-400 transition-colors duration-200 group-hover:text-white" />
             </a>
-            <a href="#" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
+            <a href="https://www.upwork.com/freelancers/~018cfec97032ba4070" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
               <FaUpwork className="w-5 h-5 text-gray-400 transition-colors duration-200 group-hover:text-white" />
             </a>
             <a href="#" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">

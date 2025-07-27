@@ -79,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({
         {/* Social Icons - Bottom Right */}
         <div className="absolute bottom-6 right-6 flex space-x-4 z-10">
           <a 
-            href={arrowLink} 
+            href='https://www.upwork.com/freelancers/~018cfec97032ba4070'
             target="_blank" 
             rel="noopener noreferrer"
             className="relative p-2 border border-white text-white overflow-hidden group transition-all duration-300 w-10 h-10 flex items-center justify-center"
@@ -99,7 +99,7 @@ const Hero: React.FC<HeroProps> = ({
             <FaLinkedinIn className="w-4 h-4" />
           </a>
           <a 
-            href="https://wa.me/" 
+            href="https://wa.me/923485467832" 
             target="_blank" 
             rel="noopener noreferrer"
             className="relative p-2 border border-white text-white overflow-hidden group transition-all duration-300 w-10 h-10 flex items-center justify-center"

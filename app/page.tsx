@@ -1,31 +1,13 @@
-import About from './components/About';
 import Hero from './components/Hero';
+import About from './components/About';
 import PortfolioProjects from './components/Portfolio_projects';
 import WhyWorkWithMe from './components/why-work-with-me';
 import ContactSection from './components/ContactSection';
 import WebDevelopmentServices from './components/WebDevelopmentServices';
+import projects from './storage/storage';
 
-const projects = [
-  {
-    id: 1,
-    title: 'Electronic Health Records System',
-    description: 'A comprehensive EHR system for managing patient records and medical history.',
-    image: '/Telemedcin_App_Ui.avif',
-    category: 'Healthcare',
-    caseStudyLink: '/case-studies/ehr-system'
-  },
-  {
-    id: 2,
-    title: 'Telemedicine Platform',
-    description: 'A secure platform enabling remote doctor-patient consultations.',
-    image: '/Telemedcin_App_Ui.avif',
-    category: 'Healthcare',
-    caseStudyLink: '/case-studies/telemedicine'
-  },
-  // Add more projects as needed
-];
 
-export default async function Home() {
+export default function Home() {
   return (
     <section className="space-y-16 md:space-y-24">
       <Hero
@@ -41,9 +23,9 @@ export default async function Home() {
       <WebDevelopmentServices />
       <PortfolioProjects 
         projects={projects} 
-        titleP1 = 'MY WORK'
-        titleP2 = 'Turning Ideas Into Impact'
-        subtitle = 'Each project has been an opportunity to learn, grow, and solve real problems. From personal experiments to client-focused solutions, I’m proud to share this journey with you.'
+        titleP1='MY WORK'
+        titleP2='Turning Ideas Into Impact'
+        subtitle='Each project has been an opportunity to learn, grow, and solve real problems. From personal experiments to client-focused solutions, I am proud to share this journey with you'
       />
       <ContactSection />
     </section>
