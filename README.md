@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Profile
+I'm a passionate web developer focused on healthcare—crafting fast, accessible, and beautiful experiences that make care easier and more human.
+About
+  I’m Malik Mubashir, a full-stack developer who started coding at 17 with a simple goal — build things that help people.
+Today, I craft fast, accessible, and SEO-friendly web apps, with a focus on healthcare. Clean UI, scalable back-ends, and thoughtful UX are my toolkit. 

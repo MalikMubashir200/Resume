@@ -1,33 +1,29 @@
 import type { Metadata } from "next";
-import { Ubuntu, Roboto_Mono, Open_Sans } from "next/font/google";
+import { Inter, Ubuntu, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./Header";
 import Footer from "./footer";
 
-// Load Ubuntu
+// Load Inter font
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap"
+});
+
+// Load Ubuntu font
 const ubuntu = Ubuntu({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
   variable: "--font-ubuntu",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  display: "swap",
+  display: "swap"
 });
 
-// Load Open Sans
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-// Load Roboto Mono
+// Load Roboto Mono font
 const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  display: "swap",
-  preload: true,
-  fallback: ['monospace'],
+  variable: "--font-roboto-mono",
+  display: "swap"
 });
 
 export const metadata: Metadata = {
@@ -46,9 +42,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`scroll-smooth ${ubuntu.variable} ${robotoMono.variable} ${openSans.variable}`}
+      className={`${inter.variable} ${ubuntu.variable} ${robotoMono.variable} scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className="antialiased bg-white text-gray-900 font-ubuntu">
+      <body className="antialiased bg-white text-gray-900 font-sans">
         <Header/>
         {/* Main content with proper spacing */}
         <main 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaLinkedinIn, FaWhatsapp, FaGithub, FaTwitter, FaArrowRight } from 'react-icons/fa6';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaArrowRight, FaLinkedinIn, FaWhatsapp, FaGithub, FaTwitter, FaMapLocation } from 'react-icons/fa6';
+import { SiFiverr, SiUpwork } from 'react-icons/si';
 
 const ContactSection = () => {
   return (
@@ -63,14 +63,14 @@ const ContactSection = () => {
               </a>
             </div>
             <div className="mt-4 text-sm text-gray-500">
-              Available 9 AM - 6 PM (PST)
+              Available 10 AM - 9 PM (PST)
             </div>
           </div>
 
           {/* Contact Card 3: Location */}
           <div className="group bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-center border border-gray-100">
             <div className="w-16 h-16 bg-[#faaf52] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FaMapMarkerAlt className="text-2xl text-white" />
+                <FaMapLocation className="text-2xl text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">Find Me</h3>
             <p className="text-gray-600 mb-6">
@@ -79,31 +79,34 @@ const ContactSection = () => {
             </p>
             <div className="flex justify-center space-x-4 mb-6">
               <a 
-                href="https://www.linkedin.com/in/yourprofile" 
-                className="w-12 h-12 rounded-full bg-gray-100 hover:bg-[#0077b5] hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all"
+                href="https://www.fiverr.com/yourusername" 
+                className="w-12 h-12 rounded-full bg-gray-100 hover:bg-[#1DBF73] hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all group"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Fiverr"
+                title="Fiverr"
+              >
+                <SiFiverr className="text-xl group-hover:scale-110 transition-transform" />
+              </a>
+              <a 
+                href="https://www.upwork.com/freelancers/~yourusername" 
+                className="w-12 h-12 rounded-full bg-gray-100 hover:bg-[#14A800] hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all group"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Upwork"
+                title="Upwork"
+              >
+                <SiUpwork className="text-xl group-hover:scale-110 transition-transform" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/yourusername" 
+                className="w-12 h-12 rounded-full bg-gray-100 hover:bg-[#0077b5] hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all group"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                title="LinkedIn"
               >
                 <FaLinkedinIn className="text-xl group-hover:scale-110 transition-transform" />
-              </a>
-              <a 
-                href="https://github.com/yourusername" 
-                className="w-12 h-12 rounded-full bg-gray-100 hover:bg-gray-800 hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <FaGithub className="text-xl group-hover:scale-110 transition-transform" />
-              </a>
-              <a 
-                href="https://twitter.com/yourusername" 
-                className="w-12 h-12 rounded-full bg-gray-100 hover:bg-[#1DA1F2] hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <FaTwitter className="text-xl group-hover:scale-110 transition-transform" />
               </a>
             </div>
             <div className="text-sm text-gray-500">

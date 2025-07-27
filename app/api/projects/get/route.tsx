@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+import prisma from '@/lib/prisma';
 
 export async function GET() {
   try {
-    return NextResponse.json({message:'Hello world'});
+    const projects = await prisma.project.findMany();
+    return NextResponse.json(projects);
     
   } catch (error) {
     console.error('Error fetching projects:', error);

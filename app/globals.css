@@ -46,7 +46,12 @@ span,
 h2 {
   font-family: var(--font-roboto-mono);
 }
-  
+
+code, pre, .mono, .heading, .code-text {
+  font-family: var(--font-roboto-mono), monospace;
+  font-size: 0.9em;
+}
+
 /* Utility: Orange fill from bottom on hover */
 .fill-from-bottom {
   position: relative;

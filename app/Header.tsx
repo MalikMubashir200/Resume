@@ -56,14 +56,14 @@ const Header = () => {
     }
   };
 
-  interface industry {
-    link: string;
-    name: string;
-  }
+  // interface industry {
+  //   link: string;
+  //   name: string;
+  // }
 
-  const industries: industry[] = [
-    { link: '/healthcare', name: 'Healthcare' },
-  ];
+  // const industries: industry[] = [
+  //   { link: '/industries/healthcare', name: 'Healthcare Tech' },
+  // ];
 
   return (
     <>
@@ -84,7 +84,7 @@ const Header = () => {
         
         <div className="hidden md:flex flex-1 items-center justify-center">
           <div className="origin-center -rotate-90 whitespace-nowrap">
-            <h1 className="text-[1.3rem] font-normal text-gray-700 heading">Malik "MR" Mubashir</h1>
+            <h1 className="text-[1.5rem] font-normal text-gray-700 heading">Malik "MR" Mubashir</h1>
             <p className="text-md text-gray-500 w-full text-center">Web Developer</p>
           </div>
         </div>
@@ -134,7 +134,15 @@ const Header = () => {
                   About
                 </Link>
               </li>
-              <li className="relative">
+              <Link 
+                  href="#services" 
+                  role="menuitem" className="text-4xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200 block py-4 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
+                  onClick={toggleMenu}
+                >
+                Services
+                </Link>
+              
+              {/* <li className="relative">
                 <button
                   ref={industriesButtonRef}
                   onClick={toggleIndustries}
@@ -148,31 +156,30 @@ const Header = () => {
                     className={`transition-transform duration-200 text-xl ${showIndustries ? 'rotate-180' : ''}`} 
                     aria-hidden="true"
                   />
-                </button>
-                {showIndustries && (
+                </button> */}
+                {/* {showIndustries && (
                   <ul 
                     id="industries-submenu" role="menu"
                     className="mt-2 ml-6 space-y-3 border-l border-gray-200 pl-5"
                   >
-                    <li>
-                      {industries.map((item) =>{
-                        return(
-                          <Link 
-                        href={item.link} 
-                        role="menuitem" className="text-2xl flex items-center gap-3 font-normal text-gray-700 hover:text-orange-500 transition-colors duration-200 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
-                        onClick={toggleMenu}
-                      >
-                        <div className='h-3 w-3 bg-orange-500 rounded-full'></div>
-                         {item.name}
-                      </Link>
-                        )
-                      })}
-                    </li>
+                    {industries.map((item, index) => (
+                      <li key={`industry-${index}`}>
+                        <Link 
+                          href={item.link} 
+                          role="menuitem" 
+                          className="text-2xl flex items-center gap-3 font-normal text-gray-700 hover:text-orange-500 transition-colors duration-200 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white rounded-lg"
+                          onClick={toggleMenu}
+                        >
+                          <div className='h-3 w-3 bg-orange-500 rounded-full'></div>
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
                    
                    
                   </ul>
-                )}
-              </li>
+                )} */}
+              {/* </li> */}
               <li>
                 <Link 
                   href="#work" 

@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <p className=" leading-relaxed text-sm md:text-base text-gray-600">
             I’m Malik Mubashir, a full-stack developer who started coding at 17 with a simple goal — build things that help people.
-            Today, I craft fast, accessible, and SEO-friendly web apps, with a focus on healthcare. Clean UI, scalable back-ends, and thoughtful UX are my toolkit.
+            Today, I craft fast, accessible, and SEO-friendly web apps. Clean UI, scalable back-ends, and thoughtful UX are my toolkit.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ const About = () => {
               <div>
                 <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">Tools & Others</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Git', 'GitHub', 'VS Code', 'Responsive Design', 'UI/UX'].map((skill, i) => (
+                  {['Git', 'GitHub', 'VS Code', 'Responsive Design', 'UI/UX','Wordpress'].map((skill, i) => (
                     <span key={i} className="px-3 py-1.5 bg-gray-50 text-sm text-gray-700 rounded-full border border-gray-200 hover:border-[#faaf52] transition-colors">
                       {skill}
                     </span>
