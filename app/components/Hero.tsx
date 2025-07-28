@@ -4,7 +4,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 
 interface HeroProps {
   heading?: string;
-  subheading: string; // Optional subheading
+  subheading: string; 
   description: string;
   imageSrc: string;
   imageAlt: string;
