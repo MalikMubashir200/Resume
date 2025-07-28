@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="space-y-5">
           <h3 className="text-lg font-semibold uppercase tracking-wider text-white">FOLLOW ME</h3>
           <div className="flex space-x-5">
-            <a href="#" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
+            <a href="http://www.fiverr.com/s/VY2v1Qx" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">
               <TbBrandFiverr className="w-5 h-5 text-gray-400 transition-colors duration-200 group-hover:text-white" />
             </a>
             <a href="https://wa.me/923485467832" className="relative group w-10 h-10 flex items-center justify-center border border-gray-400 overflow-hidden hover:border-orange-400 fill-from-bottom">

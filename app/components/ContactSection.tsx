@@ -79,7 +79,7 @@ const ContactSection = () => {
             </p>
             <div className="flex justify-center space-x-4 mb-6">
               <a 
-                href="https://www.fiverr.com/yourusername" 
+                href="http://www.fiverr.com/s/VY2v1Qx" 
                 className="w-12 h-12 rounded-full bg-gray-100 hover:bg-[#1DBF73] hover:text-white flex items-center justify-center text-gray-600 hover:shadow-md transition-all group"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -109,7 +109,7 @@ const Hero: React.FC<HeroProps> = ({
             <FaWhatsapp className="w-4 h-4" />
           </a>
           <a 
-            href="https://www.facebook.com/" 
+            href="http://www.fiverr.com/s/VY2v1Qx" 
             target="_blank" 
             rel="noopener noreferrer"
             className="relative p-2 border border-white text-white overflow-hidden group transition-all duration-300 w-10 h-10 flex items-center justify-center"
