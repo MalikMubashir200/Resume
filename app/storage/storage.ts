@@ -27,7 +27,7 @@ const projects = [
       id: 4,
       title: 'Weather Site',
       description: 'A Website which user can see their current weather using open api.',
-      image: '/P4.png',
+      image: '/P4.avif',
       category: 'Student', 
       caseStudyLink: '#'
     },
