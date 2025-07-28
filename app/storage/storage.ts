@@ -1,5 +1,3 @@
-import { title } from "process";
-
 const projects = [
     {
       id: 1,

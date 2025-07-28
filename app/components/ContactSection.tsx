@@ -35,7 +35,7 @@ const ContactSection = () => {
               mubashirmalik6778@gmail.com
             </a>
             <div className="mt-4 text-sm text-gray-500">
-              I'll respond within 24 hours
+              I&apos;ll respond within 24 hours
             </div>
           </div>
 
@@ -110,7 +110,7 @@ const ContactSection = () => {
               </a>
             </div>
             <div className="text-sm text-gray-500">
-              Let's connect and collaborate!
+              Let&apos;s connect and collaborate!
             </div>
           </div>
         </div>
