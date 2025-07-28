@@ -27,7 +27,7 @@ const projects = [
       id: 4,
       title: 'Weather Site',
       description: 'A Website which user can see their current weather using open api.',
-      image: '/p4.png',
+      image: '/P4.png',
       category: 'Student', 
       caseStudyLink: '#'
     },
@@ -35,7 +35,7 @@ const projects = [
       id:5,
       title: "Book's NOTES",
       description:"This website i have created using Open Library Api which has user book isbn and api provide cover of this book and add thair book notes.",
-      image:"/p5.jpg",
+      image:"/p5.png",
       category:"Student",
       caseStudyLink:"#"
     }
