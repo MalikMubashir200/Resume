@@ -5,10 +5,10 @@ import { TbBrandFiverr } from 'react-icons/tb';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1b21] text-gray-300 py-12 md:py-16 px-10 md:px-12 border-t border-[#2d2e36] mt-16 md:ml-15">
+    <footer className="bg-[#1a1b21] text-gray-300 py-12 md:py-16 px-10 md:px-12 border-t border-[#2d2e36] mt-16 ml-15">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
         {/* About Section */}
-        <div className="space-y-5 ">
+        <div className="space-y-12 ">
           <h3 className="text-lg font-semibold uppercase tracking-wider text-white">ABOUT ME</h3>
           <p className="text-sm leading-relaxed text-gray-400">
             I&apos;m a freelance web developer with a passion for building modern web applications that improve user experiences and reduce administrative burdens.
