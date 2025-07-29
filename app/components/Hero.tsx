@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({
   arrowLink
 }) => {
   return (
-    <section className="w-full h-screen flex flex-col md:flex-row items-center justify-center md:justify-start relative pt-24 md:pt-0">
+    <section className="w-full h-screen flex flex-col md:flex-row items-center justify-center md:justify-start relative md:pt-0">
       {/* Arrow box - centered and only on medium screens and up */}
       <div className="hidden md:flex absolute left-1/2 bottom-8 transform -translate-x-1/2 z-10">
         <div className="relative">
@@ -48,7 +48,7 @@ const Hero: React.FC<HeroProps> = ({
         </div>
       </div>
       {/* Left: Intro text */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-8 md:px-16 lg:px-24 space-y-6 md:space-y-8 text-center md:text-left mt-8 md:mt-0">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-8 md:px-16 lg:px-24 space-y-6 md:space-y-8 text-center md:text-left mt-50 md:mt-0">
         <div className="space-y-4">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
             {heading && (
