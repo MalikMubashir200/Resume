@@ -5,7 +5,7 @@ import { TbBrandFiverr } from 'react-icons/tb';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1b21] text-gray-300 py-12 md:py-16 px-10 md:px-12 border-t border-[#2d2e36] mt-16 ml-15">
+    <footer className="bg-[#1a1b21] text-gray-300 py-12 md:py-16 px-10 md:px-12 border-t border-[#2d2e36] mt-16 md:ml-15">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
         {/* About Section */}
         <div className="space-y-5 ">
