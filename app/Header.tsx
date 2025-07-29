@@ -54,9 +54,9 @@ const Header = () => {
           />
         </Link>
         
-        <div className="hidden md:flex flex-1 items-center justify-center">
-          <div className="origin-center -rotate-90 whitespace-nowrap">
-            <h1 className="text-[1.5rem] font-normal text-gray-700 heading">Malik &quot;MR&quot; Mubashir</h1>
+        <div className="flex flex-1 items-center justify-center">
+          <div className="origin-center md:-rotate-90 whitespace-nowrap">
+            <h1 className="text-[1.1rem] md:text-[1.3rem] font-medium text-gray-700 ">Malik &quot;MR&quot; Mubashir</h1>
             <p className="text-md text-gray-500 w-full text-center">Web Developer</p>
           </div>
         </div>

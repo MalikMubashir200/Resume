@@ -22,7 +22,6 @@ body {
 /* Headings use both Open Sans and Ubuntu */
 h1, h2, h3, h4, h5, h6 {
    font-family: var(--font-open-sans), var(--font-ubuntu), sans-serif;
-   font-weight: 600; /* Semi-bold for better readability */
    @supports (font-variation-settings: normal) {
      font-family: var(--font-open-sans), var(--font-ubuntu), sans-serif;
    }
@@ -41,7 +40,6 @@ body {
 
 p,
 a,
-.heading,
 span,
 h2 {
   font-family: var(--font-roboto-mono);
