@@ -1,3 +1,5 @@
+import { title } from "process";
+
 const projects = [
     {
       id: 1,
@@ -36,6 +38,14 @@ const projects = [
       title: "Book's NOTES",
       description:"This website i have created using Open Library Api which has user book isbn and api provide cover of this book and add thair book notes.",
       image:"/p5.png",
+      category:"Student",
+      caseStudyLink:"#"
+    },
+    {
+      id:6,
+      title:"Magzine Style Blog",
+      description:"A simple blog website which user can Login or register and see their posts and create edit and delete posts.Using Ejs, Tailwind css Express js and Postgress.",
+      image:"/Blog.webp",
       category:"Student",
       caseStudyLink:"#"
     }
