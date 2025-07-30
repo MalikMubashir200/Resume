@@ -48,8 +48,7 @@ const projects = [
       image:"/Blog.webp",
       category:"Student",
       caseStudyLink:"#"
-    }
-    // Add more projects as needed
+    } 
   ];
 
   export default projects;
