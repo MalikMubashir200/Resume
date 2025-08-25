@@ -14,7 +14,7 @@ export default function Home() {
         heading="HELLO, I'M MR."
         subheading="NICE TO MEET YOU!"
         description="I'm a passionate web developer—crafting fast, accessible, and beautiful experiences that make a difference."
-        imageSrc="/p.avif"
+        imageSrc="/profile.png"
         imageAlt="Mubashir at"
         arrowLink='#about'
       />
