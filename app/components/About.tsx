@@ -82,7 +82,7 @@ const About = () => {
               <div>
                 <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">Backend</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Node.js', 'Express', 'REST APIs', 'PostgreSQL'].map((skill, i) => (
+                  {['Node.js', 'Express', 'REST APIs', 'PostgreSQL','Fast API'].map((skill, i) => (
                     <span key={i} className="px-3 py-1.5 bg-gray-50 text-sm text-gray-700 rounded-full border border-gray-200 hover:border-[#faaf52] transition-colors">
                       {skill}
                     </span>
