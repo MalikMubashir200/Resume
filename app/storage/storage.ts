@@ -3,7 +3,7 @@ const projects = [
       id: 1,
       title: 'Todo List',
       description: 'A Website which user can add their notes,edit ,see and delete thaeir notes ',
-      image: '/p1.avif',
+      image: 'public/p1.avif',
       category: 'Student',
       caseStudyLink: '#'
     },
@@ -11,7 +11,7 @@ const projects = [
       id: 2,
       title: 'Travel Tracker',
       description: 'A Website which user can add their travel plans and see their travel countries in map.',
-      image: '/p2.avif',
+      image: 'public/p2.avif',
       category: 'Student', 
       caseStudyLink: '#'
     },
