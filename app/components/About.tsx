@@ -2,13 +2,13 @@ import React from 'react';
 import { FaBriefcase, FaGraduationCap, FaTools } from 'react-icons/fa';
 
 const experience = [
-  {
-    id: 1,
-    period: 'April 2025 - June 2025',
-    title: 'Junior Developer Intern',
-    company: 'BawdicSoft.',
-    description: 'Learning web development and working on real world projects.'
-  },
+  // {
+  //   id: 1,
+  //   period: 'April 2025 - June 2025',
+  //   title: 'Junior Developer Intern',
+  //   company: 'BawdicSoft.',
+  //   description: 'Learning web development and working on real world projects.'
+  // },
   {
     id: 2,
     period: '2024 - January 2025',
